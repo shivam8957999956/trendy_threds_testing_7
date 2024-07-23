@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { WixClientContextProvider } from "@/context/wixContext";
 import SaleLive from "@/components/SaleLive";
-
+import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,6 +25,7 @@ export default function RootLayout({
           <SaleLive/>
           <Navbar />
           {children}
+          <Analytics />
           <Footer />
         </WixClientContextProvider>
       </body>
