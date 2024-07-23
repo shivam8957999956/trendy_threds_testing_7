@@ -56,13 +56,13 @@ const AboutUs = () => {
     <div className="mt-16">
       <h2 className="text-5xl font-bold text-gray-900 mb-4 drop-shadow-lg">Join the Movement</h2>
       <p className="text-xl text-gray-700">
-        Trendy Threds is more than just a clothing brand, it's a community. We love seeing how our customers style their favorite pieces, and we encourage you to share your looks with us on social media using #[YourBrandHashtag]. Together, we can inspire others to embrace their unique style and live boldly.
+        Trendy Threds is more than just a clothing brand, it&apos;s a community. We love seeing how our customers style their favorite pieces, and we encourage you to share your looks with us on social media using #[YourBrandHashtag]. Together, we can inspire others to embrace their unique style and live boldly.
       </p>
     </div>
     <div className="mt-16">
       <h2 className="text-5xl font-bold text-gray-900 mb-4 drop-shadow-lg">Get in Touch</h2>
       <p className="text-xl text-gray-700">
-        We love hearing from our customers! Whether you have a question, feedback, or just want to say hello, don't hesitate to reach out to us at [your email address] or connect with us on [social media links].
+        We love hearing from our customers! Whether you have a question, feedback, or just want to say hello, don&apos;t hesitate to reach out to us at [your email address] or connect with us on [social media links].
       </p>
       <p className="text-xl text-gray-700">
         Thank you for being a part of the Trendy Threds family. Stay stylish!
