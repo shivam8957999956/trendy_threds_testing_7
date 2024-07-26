@@ -30,7 +30,10 @@ const Filter = () => {
           <option value="women">Women</option>
           <option value="boys">Boys</option>
           <option value="girls">Girls</option>
-        </select> */}
+        </select> */
+        }
+        <h1> Set Price
+        </h1>
         <input
           type="text"
           name="min"
@@ -55,13 +58,13 @@ const Filter = () => {
           <option value="new-arrivals">New Arrival</option>
           <option value="fetured">Popular</option>
         </select> */}
-        <select
+        {/* <select
           name=""
           id=""
           className="py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
         >
-          <option>All Filters</option>
-        </select>
+          {/* <option>All Filters</option> 
+        </select> */}
       </div>
       <div className="">
         <select
