@@ -61,7 +61,7 @@ const CustomizeProducts = ({
   return (
     <>
         <Image
-        src={pics || "/slider1.png"}
+        src={pics || "/select.png"}
         alt=""
         width={150}
         height={140}

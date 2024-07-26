@@ -63,46 +63,56 @@ const FeaturedProduct = async ({
   // console.log(await searchFilter.find())
   return (
     <>
-      <div className="h-full flex items-center justify-between md:hidden">
-      <div className="">
-      <div className="mt-12 flex flex-wrap justify-center items-center">
-        {res.items.map((product) => (
-          productNameFilter.length === 0 || isWordInSentence(product.name) ? (
-            <Link href={"/" + product.slug} key={product._id} className="w-36 m-1">
-              <div className="relative w-36 h-44 overflow-hidden">
-                <Image
-                  src={product.media?.mainMedia?.image?.url || "/product.png"}
-                  alt=""
-                  fill
-                  sizes="25vw"
-                  className="absolute object-cover z-10 hover:opacity-0 transition-opacity ease duration-500"
-                />
-                {product.media?.items && (
-                  <Image
-                    src={product.media?.items[1]?.image?.url || "/product.png"}
-                    alt=""
-                    fill
-                    sizes="25vw"
-                    className="absolute object-cover"
-                  />
-                )}
-                <div className="absolute bottom-0 left-0 right-0 p-2 bg-black bg-opacity-70 text-center text-white">
-                  <h3 className="text-xs font-semibold">{product.name}</h3>
-                </div>
-              </div>
-            </Link>
-          ) : null
-        ))}
-        {searchParams?.cat || searchParams?.name ? (
-          <Pagination
-            currentPage={res.currentPage || 0}
-            hasPrev={res.hasPrev()}
-            hasNext={res.hasNext()}
-          />
-        ) : null}
-      </div>
-    </div>
-        {/* <div className="mt-8 flex gap-x-4 gap-y-8 justify-between flex-wrap">
+      <div className="uppercase h-full flex items-center justify-between md:hidden">
+        <div className="">
+          <div className="mt-12 flex flex-wrap justify-center items-center">
+            {res.items.map((product) =>
+              productNameFilter.length === 0 ||
+              isWordInSentence(product.name) ? (
+                <Link
+                  href={"/" + product.slug}
+                  key={product._id}
+                  className="w-36 m-1"
+                >
+                  <div className="relative w-36 h-44 overflow-hidden">
+                    <Image
+                      src={
+                        product.media?.mainMedia?.image?.url || "/product.png"
+                      }
+                      alt=""
+                      fill
+                      sizes="25vw"
+                      className="absolute object-cover z-10 hover:opacity-0 transition-opacity ease duration-500"
+                    />
+                    {product.media?.items && (
+                      <Image
+                        src={
+                          product.media?.items[1]?.image?.url || "/product.png"
+                        }
+                        alt=""
+                        fill
+                        sizes="25vw"
+                        className="absolute object-cover"
+                      />
+                    )}
+                    <div className="absolute bottom-0 left-0 right-0 p-2 bg-black bg-opacity-70 text-center text-white">
+                      <h3 className="text-xs font-semibold">{product.name}</h3>
+                    </div>
+                  </div>
+                </Link>
+              ) : null
+            )}
+            {searchParams?.cat || searchParams?.name ? (
+              <Pagination
+                currentPage={res.currentPage || 0}
+                hasPrev={res.hasPrev()}
+                hasNext={res.hasNext()}
+              />
+            ) : null}
+          </div>
+        </div>
+        {/* 
+        <div className="mt-8 flex gap-x-4 gap-y-8 justify-between flex-wrap">
           {res.items.map((product: products.Product) => (
             <>
               {productNameFilter.length === 0 ||
@@ -188,51 +198,47 @@ const FeaturedProduct = async ({
               hasNext={res.hasNext()}
             />
           ) : null}
-        </div> */}
+        </div>
+         */}
       </div>
       {/* BIGGER SCREENS */}
-      <div className="hidden md:flex items-center h-full">
+      <div className="uppercase hidden md:flex items-center h-full">
         <div className="mt-12  gap-1  flex flex-wrap justify-center items-center">
           {res.items.map((product: products.Product) => (
             <>
               {productNameFilter.length == 0 ||
               isWordInSentence(product.name) ? (
-                <Link
-                  href={"/" + product.slug}
-                  className=""
-                  key={product._id}
-                >
+                <Link href={"/" + product.slug} className="" key={product._id}>
                   <div className="relative w-72 h-80 overflow-hidden ">
-                  {product.ribbon && (
+                    {product.ribbon && (
                       <div className="absolute text-xs top-0 left-0 bg-green-800 text-white px-2 py-1   z-20">
                         {product.ribbon}
                       </div>
                     )}
-                  <Image
+                    <Image
+                      src={
+                        product.media?.mainMedia?.image?.url || "/product.png"
+                      }
+                      alt=""
+                      fill
+                      sizes="25vw"
+                      className="absolute object-cover z-10 hover:opacity-0 transition-opacity easy duration-500"
+                    />
+                    {product.media?.items && (
+                      <Image
                         src={
-                          product.media?.mainMedia?.image?.url || "/product.png"
+                          product.media?.items[1]?.image?.url || "/product.png"
                         }
                         alt=""
                         fill
                         sizes="25vw"
-                        className="absolute object-cover z-10 hover:opacity-0 transition-opacity easy duration-500"
+                        className="absolute object-cover "
                       />
-                      {product.media?.items && (
-                        <Image
-                          src={
-                            product.media?.items[1]?.image?.url ||
-                            "/product.png"
-                          }
-                          alt=""
-                          fill
-                          sizes="25vw"
-                          className="absolute object-cover "
-                        />
-                      )}
-      <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-center text-white">
-        <h3 className="text-sm font-semibold">{product.name}</h3>
-        {/* <p className="text-md">${product.price}</p> */}
-      </div>
+                    )}
+                    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-center text-white">
+                      <h3 className="text-sm font-semibold">{product.name}</h3>
+                      {/* <p className="text-md">${product.price}</p> */}
+                    </div>
                     {/* <div className="absolute inset-0 bg-black opacity-50"></div>
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
                       <h3 className="text-xl font-semibold">{product.name}</h3>

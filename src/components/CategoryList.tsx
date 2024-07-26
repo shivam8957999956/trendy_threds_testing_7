@@ -10,7 +10,7 @@ const CategoryList = async () => {
   return (
     <>
       <div className="h-full flex items-center justify-between md:hidden">
-        <div className="overflow-x-auto scrollbar-hide">
+        <div className="uppercase overflow-x-auto scrollbar-hide">
           <div className="flex gap-3 p-4 w-max">
             {cats.items.map(
               (item) =>
@@ -42,7 +42,7 @@ const CategoryList = async () => {
         </div>
       </div>
       <div className="hidden md:flex items-center justify-center gap-8 h-full">
-      <div className="overflow-x-auto scrollbar-hide">
+      <div className="uppercase overflow-x-auto scrollbar-hide">
         <div className="flex gap-3 p-4">
           {cats.items.map((item) => (
             <>
@@ -62,7 +62,7 @@ const CategoryList = async () => {
                     />
                     <div className="absolute inset-0 bg-black opacity-10"></div>
                     <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center p-4">
-                      <h3 className="text-2xl font-semibold text-center text-white">
+                      <h3 className="text-xl font-semibold text-center text-white">
                         {item.name}
                       </h3>
                     </div>

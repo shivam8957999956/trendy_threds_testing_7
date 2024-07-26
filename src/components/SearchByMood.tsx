@@ -26,7 +26,7 @@ const SearchByMood = async () => {
                   />
                   <div className="absolute inset-0 bg-black opacity-10"></div>
                   <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center p-4">
-                    <h3 className="text-3xl font-semibold text-center text-white">
+                    <h3 className="text-l font-semibold text-center text-white">
                       {item.name.substring(7)}
                     </h3>
                   </div>
@@ -57,7 +57,7 @@ const SearchByMood = async () => {
                   />
                   <div className="absolute inset-0 bg-black opacity-10"></div>
                   <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center p-4">
-                    <h3 className="text-3xl font-semibold text-center text-white">
+                    <h3 className="text-xl font-semibold text-center text-white">
                       {item.name.substring(7)}
                     </h3>
                   </div>
