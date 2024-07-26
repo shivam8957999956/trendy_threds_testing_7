@@ -19,7 +19,7 @@ const Filter = () => {
   return (
     <div className="p-2 mt-12 flex justify-between">
       <div className="flex gap-6 flex-wrap">
-        <select
+        {/* <select
           name="name"
           id=""
           className="py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
@@ -30,7 +30,7 @@ const Filter = () => {
           <option value="women">Women</option>
           <option value="boys">Boys</option>
           <option value="girls">Girls</option>
-        </select>
+        </select> */}
         <input
           type="text"
           name="min"
