@@ -144,7 +144,7 @@ const NewProductList = async ({
       </div>
       {/* BIGGER SCREENS */}
       <div className="hidden md:flex  w-full h-full">
-        <div className="mt-12 gap-1 flex justify-center item-center flex-wrap ">
+        <div className="mt-12 gap-1 flex items-center justify-between flex-wrap ">
           {res.items.map((product: products.Product) => (
             <>
               {productNameFilter.length == 0 ||
