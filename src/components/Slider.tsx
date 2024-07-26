@@ -9,7 +9,7 @@ const slides = [
     id: 1,
     title: "Brand New Luxury Tees",
     description: "Sale! Up to 50% off!",
-    img: "/salefirst.png",
+    img: "/salefirst1.png",
     imgMobile:"/salefirstmob.jpg",
     url: "/",
     bg: "bg-gradient-to-r from-yellow-50 to-pink-50",

@@ -26,8 +26,8 @@ const Filter = () => {
           onChange={handleFilterChange}
         >
           <option>Gender</option>
-          <option value="mens">Mens</option>
-          <option value="womens">Womens</option>
+          <option value="men">Men</option>
+          <option value="women">Women</option>
           <option value="boys">Boys</option>
           <option value="girls">Girls</option>
         </select>
