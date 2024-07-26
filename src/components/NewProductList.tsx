@@ -66,7 +66,7 @@ const NewProductList = async ({
       <div className="h-full flex md:hidden">
         {" "}
         <div className="">
-          <div className="mt-12 flex flex-wrap ">
+          <div className="mt-12 flex flex-wrap items-center justify-between">
             {res.items.map((product) =>
               productNameFilter.length === 0 ||
               isWordInSentence(product.name) ? (
@@ -143,8 +143,8 @@ const NewProductList = async ({
         </div>
       </div>
       {/* BIGGER SCREENS */}
-      <div className="hidden md:flex w-full h-full">
-        <div className="mt-12 gap-1 flex flex-wrap ">
+      <div className="hidden md:flex  w-full h-full">
+        <div className="mt-12 gap-1 flex justify-center item-center flex-wrap ">
           {res.items.map((product: products.Product) => (
             <>
               {productNameFilter.length == 0 ||
