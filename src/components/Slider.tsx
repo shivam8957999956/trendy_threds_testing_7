@@ -88,11 +88,11 @@ const Slider = () => {
                <h1 className="text-2xl lg:text-6xl 2xl:text-8xl font-semibold text-white">
                  {slide.title}
                </h1>
-               <Link href={slide.url}>
+               {/* <Link href={slide.url}>
                  <h1 className="rounded-md bg-black text-white py-3 px-4 hover:bg-gray-700">
                    SHOP NOW
                  </h1>
-               </Link>
+               </Link> */}
              </div>
            </div>
           </div>
