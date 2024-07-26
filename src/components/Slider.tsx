@@ -19,7 +19,7 @@ const slides = [
     title: "#KapdoKoBolneDo",
     description: "Shop the trends fits your inner vibe",
     img: "/salesecond.png",
-    imgMobile:"/salesecondmob.png",
+    imgMobile:"/salesecondmob.jpg",
     url: "/",
     bg: "bg-gradient-to-r from-pink-50 to-blue-50",
   },
