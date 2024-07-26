@@ -104,7 +104,7 @@ const AboutUs = () => {
           <Link href="https://www.instagram.com/trendythreds_in/">
             @trendythreds_in
           </Link>
-          and on{" "}
+          {" "}and on{" "}
           <Link href="https://www.linkedin.com/company/trendythreds">
             Linkedin.
           </Link>
