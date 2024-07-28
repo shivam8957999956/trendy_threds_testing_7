@@ -32,26 +32,36 @@ const NewSlider = () => {
         </div>
 
         <div className="mt-16 flex flex-col sm:flex-row justify-center items-center text-center">
-  <div className="mb-4 sm:mb-0 sm:mr-20 text-base sm:text-lg md:text-xl font-sans">
-    PERFECT BLEND OF FASHION AND COMFORTABLE CLOTHES
-  </div>
-  <Link href={`/list?cat=all-products`}>
-  
-  <button className="rounded-xl bg-black text-white mb-10 md:mb-0 bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black border-2 border-black  hover:border-black transition duration-300">
-    Shop Now
-  </button></Link>
-</div>
-
-        <div className="px-2 py-10 md:px-20 md:py-20 w-full  overflow-hidden rounded-3xl">
-          <Image
-            src={"/newslide.png"}
-            alt=""
-            width={400}
-            height={500}
-            sizes="250vw"
-            className="w-full h-full object-cover rounded-3xl"
-          />
+          <div className="mb-4 sm:mb-0 sm:mr-20 text-base sm:text-lg md:text-xl font-sans">
+            PERFECT BLEND OF FASHION AND COMFORTABLE CLOTHES
+          </div>
+          <Link href={`/list?cat=all-products`}>
+            <button className="rounded-xl bg-black text-white mb-10 md:mb-0 bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black border-2 border-black  hover:border-black transition duration-300">
+              Shop Now
+            </button>
+          </Link>
         </div>
+        <div className="bg-gray-100 md:m-20 m-4 rounded-3xl md:mt-32 flex flex-col md:flex-row items-center">
+          <div className="w-full md:order-2 md:w-1/2 h-[300px] md:h-[600px]">
+            <Image
+              src="/tshirt.png"
+              alt=""
+              width={500}
+              height={400}
+              sizes="200vw"
+              className="w-full h-full object-contain"
+            ></Image>
+          </div>
+          <div className="p-2 md:p-20 font-sans mt-4 md:mt-0 md:mr-10 md:w-1/2 flex flex-col">
+            <h1 className="text-lg mb-8">
+              INDULGE IN PURE COMFORT WITH OUR T-SHIRTS. SOFT, BREATHABLE
+              FABRICS GUARANTEE AN UNMATCHED COZY FIT FOR YOUR EVERYDAY
+              RELAXATION.
+            </h1>
+            
+          </div>
+        </div>
+        
       </div>
     </div>
   );
