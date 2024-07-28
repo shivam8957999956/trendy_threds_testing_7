@@ -16,6 +16,20 @@ const config: Config = {
       colors: {
         lama: "#F35C7A",
       },
+      animation: {
+        'slide-in-right': 'slideInRight 1s ease-out'
+      },
+      keyframes: {
+        slideInRight: {
+          '0%': {
+            transform: 'translateX(100%)',
+            opacity: '0'
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: '1'
+          }
+        }}
     },
   },
   plugins: [],

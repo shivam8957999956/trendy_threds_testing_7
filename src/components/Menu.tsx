@@ -37,11 +37,11 @@ const Menu = () => {
   }, [wixClient, getCart]);
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row font-sans ">
       <Link href="/checkout">
         <div className="relative inline-block mr-4">
           <Image src="/cart.png" alt="" width={30} height={30} />
-          <div className="absolute top-0 right-0 bg-red-500 text-white rounded-full px-1 text-xs">
+          <div className="absolute top-0 right-0 bg-gray-200 text-black font-sans rounded-full px-1 text-xs">
             {counter}
           </div>
         </div>

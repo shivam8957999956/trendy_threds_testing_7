@@ -1,4 +1,5 @@
 import Filter from "@/components/Filter";
+import NewFeaturedProduct from "@/components/NewFeaturedProduct";
 import NewProductList from "@/components/NewProductList";
 import ProductList from "@/components/ProductList";
 import Skeleton from "@/components/Skeleton";
@@ -35,7 +36,7 @@ const ListPage = async ({ searchParams }: { searchParams: any }) => {
       {/* PRODUCTS */}
       <h1 className="px-2 py-2 mt-12 text-xl font-semibold">{cat?.collection?.name?.substring(0,6).toLowerCase()==="legacy"?cat?.collection?.name.substring(7):cat?.collection?.name} For You!</h1>
       <Suspense fallback={<Skeleton/>}>
-        <NewProductList
+        <NewFeaturedProduct
           categoryId={
             cat.collection?._id || "00000000-000000-000000-000000000001"
           }
