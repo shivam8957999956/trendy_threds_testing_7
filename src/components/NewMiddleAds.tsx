@@ -134,13 +134,13 @@ const NewMiddleAds = () => {
           <h1 className="text-xs mb-6">
             SUSTAINABLE FASHION
           </h1>
-          <h1 className="text-7xl mb-8">
+          <h1 className="text-5xl md:text-7xl mb-8">
           Explore our most loved products
           </h1>
           <h1 className="text-base mb-8">
           Eco-friendly fashion that doesn&apos;t compromise on style.
           </h1>
-          <button className="bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-200 hover:text-black border-2 border-black  hover:border-black transition duration-300 self-start">
+          <button className="mb-10 md:mb-0 bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-200 hover:text-black border-2 border-black  hover:border-black transition duration-300 self-start">
             Explore Collection
           </button>
           

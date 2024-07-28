@@ -8,13 +8,13 @@ const NewCategoryList = async () => {
   const cats = await wixClient.collections.queryCollections().find();
   return (
     <div className="mt-10 flex flex-wrap text-center">
-      <div className="w-full flex flex-wrap gap-4 md:gap-8">
+      <div className="mt-6 flex gap-x-8 gap-y-16 justify-between flex-wrap">
         {cats.items.map((item) => (
           <>
             {item.name?.substring(0, 6).toLowerCase() !== "legacy" ? (
               <Link
               href={`/list?cat=${item.slug}`}
-              className="mt-6 flex-shrink-0 sm:w-[45%] lg:w-[22%]"
+              className="w-full mt-6 flex-shrink-0 sm:w-[45%] lg:w-[22%]"
               key={item._id}
             >
               <div className="relative bg-slate-100 w-full h-80 rounded-lg">
@@ -26,7 +26,7 @@ const NewCategoryList = async () => {
                   className="object-cover rounded-lg"
                 />
               </div>
-              <h1 className="uppercase mt-8 font-light font-sans text-xl tracking-wide">
+              <h1 className="uppercase mt-4 font-light font-sans text-xl tracking-wide">
                 {item.name}
               </h1>
             </Link>

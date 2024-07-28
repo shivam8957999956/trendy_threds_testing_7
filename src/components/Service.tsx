@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 
 const Service = () => {
   return (
-    <div className="mt-20 flex flex-row p-10 items-center justify-between">
-      <div className="flex flex-row items-center">
+    <div className="mt-20 flex flex-col md:flex-row p-10 items-center justify-between">
+      <div className="flex flex-row items-center mt-4 md:mt-0 self-start">
         <div className="border rounded-full p-2">
           <svg
             width="40"
@@ -37,11 +37,11 @@ const Service = () => {
         </div>
 
         <div className=" font-sans flex flex-col ml-4">
-          <h1 className="font-sans text-xl">Free Shipping</h1>
-          <h1>You will love at great low prices</h1>
+          <h1 className="font-sans tex-lg md:text-xl">Free Shipping</h1>
+          <h1 className="text-xs">You will love at great low prices</h1>
         </div>
       </div>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-center mt-4 md:mt-0 self-start">
         <div className="border rounded-full p-2">
           <svg
             width="41"
@@ -71,11 +71,11 @@ const Service = () => {
         </div>
 
         <div className=" font-sans flex flex-col ml-4">
-          <h1 className="font-sans text-xl">Flexible Payment</h1>
-          <h1>Pay with Cards, UPI and COD available</h1>
+          <h1 className="font-sans tex-lg md:text-xl">Flexible Payment</h1>
+          <h1 className="text-xs">Pay with Cards, UPI and COD available</h1>
         </div>
       </div>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-center mt-4 md:mt-0 self-start">
         <div className="border rounded-full p-2">
           <svg
             width="41"
@@ -128,11 +128,11 @@ const Service = () => {
         </div>
 
         <div className=" font-sans flex flex-col ml-4">
-          <h1 className="font-sans text-xl">Fast Delivery</h1>
-          <h1>Experience the joy of fast shipping</h1>
+          <h1 className="font-sans tex-lg md:text-xl">Fast Delivery</h1>
+          <h1 className="text-xs">Experience the joy of fast shipping</h1>
         </div>
       </div>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-center mt-4 md:mt-0 self-start">
         <div className="border rounded-full p-2">
           <svg
             width="40"
@@ -175,8 +175,8 @@ const Service = () => {
         </div>
 
         <div className=" font-sans flex flex-col ml-4">
-          <h1 className="font-sans text-xl">Premium Support</h1>
-          <h1> Outstanding premium support</h1>
+          <h1 className="font-sans tex-lg md:text-xl">Premium Support</h1>
+          <h1 className="text-xs"> Outstanding premium support</h1>
         </div>
       </div>
     </div>

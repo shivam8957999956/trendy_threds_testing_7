@@ -35,9 +35,11 @@ const NewSlider = () => {
   <div className="mb-4 sm:mb-0 sm:mr-20 text-base sm:text-lg md:text-xl font-sans">
     PERFECT BLEND OF FASHION AND COMFORTABLE CLOTHES
   </div>
-  <button className="py-2 px-4 rounded-xl bg-black text-white">
+  <Link href={`/list?cat=all-products`}>
+  
+  <button className="rounded-xl bg-black text-white mb-10 md:mb-0 bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black border-2 border-black  hover:border-black transition duration-300">
     Shop Now
-  </button>
+  </button></Link>
 </div>
 
         <div className="px-2 py-10 md:px-20 md:py-20 w-full  overflow-hidden rounded-3xl">
