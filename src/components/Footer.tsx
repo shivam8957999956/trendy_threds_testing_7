@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
         <div></div>
       </div>
-      <div className=" w-full overflow-hidden">
+      {/* <div className=" w-full overflow-hidden">
         <Image
           src={"/footerlogo.png"}
           alt=""
@@ -104,7 +104,7 @@ const Footer = () => {
           sizes="250vw"
           className="w-full h-full object-cover"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
