@@ -53,7 +53,7 @@ const NewSlider = () => {
             ></Image>
           </div>
           <div className="p-2 md:p-20 font-sans mt-4 md:mt-0 md:mr-10 md:w-1/2 flex flex-col">
-            <h1 className="text-lg mb-8">
+            <h1 className="text-base md:text-lg mb-8">
               INDULGE IN PURE COMFORT WITH OUR T-SHIRTS. SOFT, BREATHABLE
               FABRICS GUARANTEE AN UNMATCHED COZY FIT FOR YOUR EVERYDAY
               RELAXATION.

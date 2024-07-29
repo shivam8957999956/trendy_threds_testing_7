@@ -87,9 +87,11 @@ const NewMiddleAds = () => {
               </h1>
             </div>
           </div>
-          <button className="bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black border-2 border-black hover:border-black transition duration-300 self-start">
-            Explore Now
-          </button>
+          <Link href={`/list?cat=featured-products`}>
+            <button className="bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black border-2 border-black hover:border-black transition duration-300 self-start">
+              Explore Now
+            </button>
+          </Link>
         </div>
       </div>
       <div className="p-2 m-2 mt-10 md:m-20 md:mt-32 flex flex-col md:flex-row items-center">
@@ -108,15 +110,14 @@ const NewMiddleAds = () => {
             Find the perfect finishing touches at Trendy Threds
           </h1>
           <h1 className="text-base mb-8">
-            Our vision at Trendy Threds is to lead the fashion industry with innovative
-            and sustainable practices. By expanding our reach and impact, we aim
-            to make a positive difference in the world of fashion and beyond.
+            Our vision at Trendy Threds is to lead the fashion industry with
+            innovative and sustainable practices. By expanding our reach and
+            impact, we aim to make a positive difference in the world of fashion
+            and beyond.
           </h1>
           <button className="bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black border-2 border-black  hover:border-black transition duration-300 self-start">
             Shop Now
           </button>
-         
-          
         </div>
       </div>
       <div className="bg-gray-200 mt-10 md:mt-32 flex flex-col md:flex-row items-center">
@@ -131,19 +132,16 @@ const NewMiddleAds = () => {
           ></Image>
         </div>
         <div className="p-2 md:p-20 font-sans mt-4 md:mt-0 md:mr-10 md:w-1/2 flex flex-col">
-          <h1 className="text-xs mb-6">
-            SUSTAINABLE FASHION
-          </h1>
+          <h1 className="text-xs mb-6">SUSTAINABLE FASHION</h1>
           <h1 className="text-5xl md:text-7xl mb-8">
-          Explore our most loved products
+            Explore our most loved products
           </h1>
           <h1 className="text-base mb-8">
-          Eco-friendly fashion that doesn&apos;t compromise on style.
+            Eco-friendly fashion that doesn&apos;t compromise on style.
           </h1>
           <button className="mb-10 md:mb-0 bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-200 hover:text-black border-2 border-black  hover:border-black transition duration-300 self-start">
             Explore Collection
           </button>
-          
         </div>
       </div>
     </div>
