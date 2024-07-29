@@ -75,6 +75,7 @@ const CartModal = () => {
                     className="object-cover rounded-md"
                   />
                 )}
+                
                 <div className="flex flex-col justify-between w-full">
                   {/* TOP */}
                   <div className="">
@@ -82,6 +83,11 @@ const CartModal = () => {
                     <div className="flex items-center justify-between gap-8">
                       <h3 className="font-semibold">
                         {item.productName?.original}
+                        
+                      </h3>
+                      <h3 className="font-semibold">
+                      
+                       
                       </h3>
                       <div className="p-1 bg-gray-50 rounded-sm flex items-center gap-2">
                         {item.quantity && item.quantity > 1 && (
