@@ -33,7 +33,7 @@ const NewFeaturedProduct = async ({
       searchParams?.page
         ? parseInt(searchParams.page) * (limit || PRODUCT_PER_PAGE)
         : 0
-    ).ascending("lastUpdated");
+    );
 
   if (searchParams?.sort) {
     const [sortType, sortBy] = searchParams.sort.split(" ");
