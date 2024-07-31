@@ -16,6 +16,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "./",
   },
+  openGraph: {
+    title: 'Trendy Threds',
+    description: 'Embrace your inner voice with our exclusive t-shirt collection #kapdokobolnedo',
+    url: 'https://www.trendythreds.in',
+    siteName: 'Trendy Threds',
+    images: [
+      {
+        url: 'https://www.trendythreds.in/_next/image?url=%2Flogo.png&w=256&q=75', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://www.trendythreds.in/_next/image?url=%2Flogo.png&w=256&q=75', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'trendy threds',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+
 };
 
 export default function RootLayout({
