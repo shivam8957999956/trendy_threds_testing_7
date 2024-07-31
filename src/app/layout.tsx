@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(`https://www.trendythreds.in`),
   title: "Trendy Threds",
   description:
-    "Explore our luxury clothing brand's exclusive collection of premium t-shirts. Experience unique, high-quality designs crafted for elegance and comfort. Elevate your style with our timeless, sophisticated pieces.",
+    "Embrace your inner voice with our exclusive t-shirt collection. Discover unique, high-quality designs and elevate your wardrobe #kapdokobolnedo theme.",
   alternates: {
     canonical: "./",
   },
