@@ -60,9 +60,6 @@ const HomePage = async () => {
           />
         </Suspense>
       </div>
-      <NewMiddleAds/>
-      
-
       <div className="md:ml-20 md:mr-20 mt-24 flex flex-col justify-center align-center p-4">
       <div className="mb-4 flex flex-row align-center items-center ">
         <div className="inline-block mr-4">
@@ -79,9 +76,10 @@ const HomePage = async () => {
           <NewFeaturedProduct
             categoryId={process.env.POPULAR_PRODUCT_POPULAR_CATEGORY_ID!}
             limit={8}
-          />
+            />
         </Suspense>
       </div>
+      <NewMiddleAds/>
       <div className="md:ml-20 md:mr-20 mt-24 flex flex-col justify-center align-center p-4">
       <div className="mb-4 flex flex-row align-center items-center ">
         <div className="inline-block mr-4">
@@ -90,7 +88,7 @@ const HomePage = async () => {
           <h1 className="uppercase text-sm font-sans text-black-600">
             Catergories
           </h1>
-        </div>
+      </div>
         <h1 className="text-3xl font-sans text-black-600">
           Our Collection
         </h1>

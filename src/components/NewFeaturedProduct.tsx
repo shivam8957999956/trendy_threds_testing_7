@@ -20,7 +20,7 @@ const NewFeaturedProduct = async ({
 
   const productQuery = wixClient.products
     .queryProducts()
-    // .startsWith("name", searchParams?.name || "")
+    .startsWith("name", searchParams?.name || "")
     .eq("collectionIds", categoryId)
     .hasSome(
       "productType",
@@ -37,7 +37,7 @@ const NewFeaturedProduct = async ({
 
   if (searchParams?.sort) {
     const [sortType, sortBy] = searchParams.sort.split(" ");
-
+    console.log(sortBy)
     if (sortType === "asc") {
       productQuery.ascending(sortBy);
     }
@@ -56,10 +56,11 @@ const NewFeaturedProduct = async ({
     const lowerCaseWord = productNameFilter.toLowerCase();
     const lowerCaseSentence = sentence.toLowerCase();
     const words = lowerCaseSentence.split(/\s+/);
+    console.log(words)
     return words.includes(lowerCaseWord);
   }
 
-  // console.log(filteredProducts);
+   
   // console.log(await searchFilter.find())
   return (
     <div className="mt-8 flex gap-x-8 gap-y-16 justify-between flex-wrap">
@@ -73,7 +74,7 @@ const NewFeaturedProduct = async ({
             >
               <div className="relative w-full">
                 {product.ribbon && (
-                  <div className="absolute top-0 left-0 bg-red-500 text-white px-2 py-1 rounded-tl-md  z-20">
+                  <div className="font-sans text-xs absolute top-0 left-0 bg-black text-white px-2 py-1 rounded-tl-md  z-20">
                     {product.ribbon}
                   </div>
                 )}

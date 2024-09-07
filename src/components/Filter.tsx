@@ -76,8 +76,8 @@ const Filter = () => {
           <option>Sort By</option>
           <option value="asc price">Price (low to high)</option>
           <option value="desc price">Price (high to low)</option>
-          <option value="asc lastUpdated">Newest</option>
-          <option value="desc lastUpdated">Oldest</option>
+          <option value="asc lastUpdated">Oldest</option>
+          <option value="desc lastUpdated">Newest</option>
         </select>
       </div>
     </div>

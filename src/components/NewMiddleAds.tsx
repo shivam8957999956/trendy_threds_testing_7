@@ -115,9 +115,11 @@ const NewMiddleAds = () => {
             impact, we aim to make a positive difference in the world of fashion
             and beyond.
           </h1>
+          <Link href={`/list`}>
           <button className="bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black border-2 border-black  hover:border-black transition duration-300 self-start">
             Shop Now
           </button>
+          </Link>
         </div>
       </div>
       <div className="bg-gray-200 mt-10 md:mt-32 flex flex-col md:flex-row items-center">
